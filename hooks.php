@@ -29,12 +29,16 @@ add_hook('AdminAreaHeadOutput', 99999999, function ($vars) {
 });
 
 add_hook('ClientAreaPage', 1, function ($vars) {
+    $bool = false;
     foreach ($vars['transactions'] as &$transaction) {
         $check = FemaCheckListsModel::where('order_id', '=', $transaction['transid'])->first();
-        if ($check != null && $check->status == 'CONFIRMED')
+        if ($check != null && $check->status == 'CONFIRMED') {
             $transaction['check_id'] = $check->id;
+            $bool = true;
+        }
     }
     return [
+        'check_ofd_ru' => $bool,
         'transactions' => $vars['transactions']
     ];
 });
