@@ -1,0 +1,63 @@
+div#tableInvoicesList_length {
+    float: left;
+}
+
+div#tableInvoicesList_paginate {
+    float: right;
+}
+
+div#tableInvoicesList_filter {
+    float: right;
+}
+
+div#tableInvoicesList_info {
+    float: left;
+}
+
+#tableInvoicesList td:hover {
+    cursor: pointer;
+}
+
+
+div#tableTransactionList_length {
+    float: left;
+}
+
+div#tableTransactionList_paginate {
+    float: right;
+}
+
+div#tableTransactionList_filter {
+    float: right;
+}
+
+div#tableTransactionList_info {
+    float: left;
+}
+
+#tableTransactionList td:hover {
+    cursor: pointer;
+}
+
+
+
+div#tableLogsList_length {
+    float: left;
+}
+
+div#tableLogsList_paginate {
+    float: right;
+}
+
+div#tableLogsList_filter {
+    float: right;
+}
+
+div#tableLogsList_info {
+    float: left;
+}
+
+#tableLogsList td:hover {
+    cursor: pointer;
+}
+
