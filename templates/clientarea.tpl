@@ -11,7 +11,7 @@
                 <div class="form-group" style="height: 10px;">
                     <label class="col-sm-3 control-label" style="width: 150px;float: left;">Тип операции</label>
                     <div class="col-sm-5" style="float: left;">
-                        <span>{$check.type}</span>
+                        <span>{if $check.type eq 'Income'}Приход{else}Возврат{/if}</span>
                     </div>
                 </div>
                 <div class="form-group" style="height: 10px;">

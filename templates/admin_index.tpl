@@ -19,8 +19,8 @@
             {foreach from=$checks item=check}
                 <tr>
                     <td>{$check.id}</td>
-                    <td>{$check.type}</td>
-                    <td>{$check.status}</td>
+                    <td>{if $check.type eq 'Income'}Приход{else}Возврат{/if}</td>
+                    <td>{$check.status_message}</td>
                     <td>{$check.order_id}</td>
                     <td><a href="invoices.php?action=edit&id={$check.transactions.invoiceid}">{$check.transactions.invoiceid}</a></td>
                     <td>{$check.total}</td>
